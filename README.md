@@ -36,13 +36,14 @@ The repository contains source files and build scripts.
 
 ## Using the tool
 
-**Linux GUI:** Connect the ELM327 to your computer and the vehicle's OBD-II port. Run `pme-gui`, choose the serial port and baud rate, then select **Read Status**. Confirm the result before enabling or disabling Police Mode.
+**Linux GUI:** Connect the ELM327 to your computer and the Falcon's OBD-II port with the ignition on (reds). Run `pme-gui`, choose the serial port and baud rate, then select **Read Status**. Confirm the result before enabling or disabling Police Mode.
  ![Linux GUI](linux-gui.png)
 
-**Android:** Connect the USB ELM327 through a USB-C OTG adapter. Open the app, select the USB device and baud rate, grant USB permission, then select **Read Status**.
+**Android:** Connect the ELM327 to your phone via USB-C OTG adapter, then plug the ELM327 into the Falcon's OBD-II port with the ignition on (reds). Open the app, select the USB device and baud rate, grant USB permission, then select **Read Status**.
  ![Android GUI](android-gui.png)
  
 **Linux CLI:**
+Connect the ELM327 to your computer and the Falcon's OBD-II port with the ignition on (reds).
 
 ```bash
 ./bin/pme-cli --list
@@ -122,9 +123,9 @@ adb install -r android/app/build/outputs/apk/debug/app-debug.apk
 
 ## Credits
 
-Inspired by the original **Windows B Series Police Mode Enabler** by **Matt (`aumatt`)**, first shared on the Fordmods forum in June 2011: [original Fordmods post](https://www.fordmods.com/fordmods-technical-documents-diy-f38/b-series-police-mode-enabler-t104886.html).
+Inspired by the original **Windows B Series Police Mode Enabler** by **Matt (`aumatt`)**, first shared on the [Fordmods forum](https://www.fordmods.com/fordmods-technical-documents-diy-f38/b-series-police-mode-enabler-t104886.html). in June 2011.
 
-This project is an independent Linux/Android implementation. It does not distribute the original Windows executable and is not affiliated with Ford.
+This project is an independent Linux/Android implementation. It does not distribute the original Windows executable and is not affiliated with, endorsed by, or associated with Ford Motor Company, their suppliers, or any of the semiconductor manufacturers.
 
 ## Licence
 
