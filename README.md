@@ -37,9 +37,11 @@ The repository contains source files and build scripts.
 ## Using the tool
 
 **Linux GUI:** Connect the ELM327 to your computer and the vehicle's OBD-II port. Run `pme-gui`, choose the serial port and baud rate, then select **Read Status**. Confirm the result before enabling or disabling Police Mode.
+ ![Linux GUI](linux-gui.png)
 
 **Android:** Connect the USB ELM327 through a USB-C OTG adapter. Open the app, select the USB device and baud rate, grant USB permission, then select **Read Status**.
-
+ ![Android GUI](android-gui.png)
+ 
 **Linux CLI:**
 
 ```bash
