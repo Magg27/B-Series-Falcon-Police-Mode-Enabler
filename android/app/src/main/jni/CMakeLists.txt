@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.22)
+project(falconpolicemode C)
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+add_library(pme SHARED native.c ../../../../../core/pme.c)
+target_include_directories(pme PRIVATE ../../../../../core)
+target_compile_options(pme PRIVATE -Wall -Wextra -Werror)
